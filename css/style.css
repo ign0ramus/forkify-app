@@ -2,29 +2,29 @@
       Начало общих стилей
 *********************************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: 100%/1.5rem 'Nunito Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: 100%/1.5rem 'Nunito Sans', sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  color: #655A56;
-  background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-  background-size: cover;
+	line-height: 1.6;
+	color: #655a56;
+	background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+	background-size: cover;
 }
 
 .container {
-  width: 90%;
-  margin: 2% auto;
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.2);
-  display: grid;
-  grid-template-rows: auto minmax(100vh, auto);
-  grid-template-columns: 25% 50% 25%;
-  grid-template-areas: "head head head" "list recipe shopping";
+	width: 90%;
+	margin: 2% auto;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.2);
+	display: grid;
+	grid-template-rows: auto minmax(100vh, auto);
+	grid-template-columns: 25% 50% 25%;
+	grid-template-areas: 'head head head' 'list recipe shopping';
 }
 /******************************** 
       Конец общих стилей
@@ -33,121 +33,131 @@ body {
 /******************************** 
     Начало стилей для кнопок
 *********************************/
-.btn, .btn-small, .btn-small:link, .btn-small:visited {
-  background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-  border-radius: 1rem;
-  border: none;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  font-size: 0.7rem;
-  align-items: center;
-  transition: all .2s;
+.btn,
+.btn-small,
+.btn-small:link,
+.btn-small:visited {
+	background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+	border-radius: 1rem;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	font-size: 0.7rem;
+	align-items: center;
+	transition: all 0.2s;
 }
-.btn:hover, .btn-small:hover {
-  transform: scale(1.05);
+.btn:hover,
+.btn-small:hover {
+	transform: scale(1.05);
 }
 
-.btn:focus, .btn-small:focus {
-  outline: none;
+.btn:focus,
+.btn-small:focus {
+	outline: none;
 }
 
-.btn > *:first-child, .btn-small > *:first-child {
-  margin-right: 2px;
+.btn > *:first-child,
+.btn-small > *:first-child {
+	margin-right: 2px;
 }
 
 .btn {
-  padding: 1%;
+	padding: 1%;
 }
 
 .btn svg {
-  height: 1rem;
-  width: 1rem;
-  fill: currentColor;
+	height: 1rem;
+	width: 1rem;
+	fill: currentColor;
 }
 
-.btn-small, .btn-small:link, .btn-small:visited {
-  font-size: 1rem;
-  padding: 1%;
-  text-decoration: none;
-  white-space: nowrap;
+.btn-small,
+.btn-small:link,
+.btn-small:visited {
+	font-size: 1rem;
+	padding: 1%;
+	text-decoration: none;
+	white-space: nowrap;
 }
 
-.btn-small svg, .btn-small:link svg, .btn-small:visited svg {
-  height: 1rem;
-  width: 1rem;
-  fill: currentColor;
+.btn-small svg,
+.btn-small:link svg,
+.btn-small:visited svg {
+	height: 1rem;
+	width: 1rem;
+	fill: currentColor;
 }
 
 .btn-inline {
-  color: #F59A83;
-  font-size: 0.7rem;
-  border: none;
-  background-color: #F9F5F3;
-  border-radius: 10rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: all .2s;
-  white-space: nowrap;
+	color: #f59a83;
+	font-size: 0.7rem;
+	border: none;
+	background-color: #f9f5f3;
+	border-radius: 10rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all 0.2s;
+	white-space: nowrap;
 }
 .btn-inline svg {
-  height: 1rem;
-  width: 1rem;
-  fill: currentColor;
+	height: 1rem;
+	width: 1rem;
+	fill: currentColor;
 }
 
 .btn-inline:hover {
-  color: #F48982;
-  background-color: #F2EFEE;
+	color: #f48982;
+	background-color: #f2efee;
 }
 
 .btn-inline:focus {
-  outline: none;
+	outline: none;
 }
 
 .btn-inline span {
-  padding: 5%;
+	padding: 5%;
 }
 
 .results__pages {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10% 5%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10% 5%;
 }
 
 .btn-tiny {
-  height: 1rem;
-  width: 1rem;
-  border: none;
-  background: none;
-  cursor: pointer;
+	height: 1rem;
+	width: 1rem;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
 .btn-tiny svg {
-  height: 100%;
-  width: 100%;
-  fill: #F59A83;
-  transition: all .3s;
+	height: 100%;
+	width: 100%;
+	fill: #f59a83;
+	transition: all 0.3s;
 }
 
 .btn-tiny:focus {
-  outline: none;
+	outline: none;
 }
 
 .btn-tiny:hover svg {
-  fill: #F48982;
-  transform: translateY(-1px);
+	fill: #f48982;
+	transform: translateY(-1px);
 }
 
 .btn-tiny:active svg {
-  fill: #F48982;
-  transform: translateY(0);
+	fill: #f48982;
+	transform: translateY(0);
 }
 
 .btn-tiny:not(:last-child) {
-  margin-right: .3rem;
+	margin-right: 0.3rem;
 }
 /******************************** 
     Конец стилей для кнопок
@@ -157,81 +167,81 @@ body {
     Начало стилей хэдера
 *********************************/
 .header {
-  grid-area: head;
-  background-color: #F9F5F3;
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-  justify-items: center;
-  align-items: center;
+	grid-area: head;
+	background-color: #f9f5f3;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	justify-items: center;
+	align-items: center;
 }
-  .header__logo {
-    max-width: 70%;
-    height: auto;
-    vertical-align: middle;
-  }
+.header__logo {
+	max-width: 70%;
+	height: auto;
+	vertical-align: middle;
+}
 .logo_container {
-  padding: 2%;
-  text-align: center;
-  width: 100%;
+	padding: 2%;
+	text-align: center;
+	width: 100%;
 }
 .search {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  transition: all .3s;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	transition: all 0.3s;
 }
-  .search:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
-  }
-  .search__field {
-    border: none;
-    background: none;
-    font-family: inherit;
-    color: inherit;
-    font-size: 1rem;
-    width: 100%;
-  }
-    .search__field:focus {
-      outline: none;
-    }
-    .search__field::placeholder {
-      color: #DAD0CC;
-    }
+.search:focus-within {
+	transform: translateY(-2px);
+	box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
+}
+.search__field {
+	border: none;
+	background: none;
+	font-family: inherit;
+	color: inherit;
+	font-size: 1rem;
+	width: 100%;
+}
+.search__field:focus {
+	outline: none;
+}
+.search__field::placeholder {
+	color: #dad0cc;
+}
 
 .likes__field {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: all .3s;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s;
 }
-  .likes__field:hover {
-    background-color: #F2EFEE;
-  }
+.likes__field:hover {
+	background-color: #f2efee;
+}
 .likes__panel:hover,
 .likes__field:hover + .likes__panel {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 .likes__icon {
-  fill: #F59A83;
-  height: 3rem;
-  width: 2.5rem;
+	fill: #f59a83;
+	height: 3rem;
+	width: 2.5rem;
 }
 .likes__panel {
-  position: absolute;
-  right: 0;
-  z-index: 10;
-  width: 25%;
-  background-color: #fff;
-  box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(-20%);
-  transition: all;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+	width: 25%;
+	background-color: #fff;
+	box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(-20%);
+	transition: all;
 }
 /******************************** 
     Конец стилей хэдера
@@ -241,73 +251,74 @@ body {
 Начало стилей результатов поиска и списка лайков
 *********************************/
 .results {
-  width: 100%;
-  grid-area: list;
+	width: 100%;
+	grid-area: list;
 }
-  .results__list,
-  .likes__list {
-    list-style: none;
-  }
+.results__list,
+.likes__list {
+	list-style: none;
+}
 
-  .results__link:link, .results__link:visited,
-  .likes__link:link,
-  .likes__link:visited {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    transition: all .3s;
-    border-right: 1px solid #fff;
-    text-decoration: none;
-  }
-  .results__link:hover,
-  .likes__link:hover {
-    background-color: #F9F5F3;
-    transform: translateY(-2px);
-  }
-  .results__link--active,
-  .likes__link--active {
-    background-color: #F9F5F3;
-  }
-  .results__fig,
-  .likes__fig {
-    flex: 0 0 3rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 5%;
-    backface-visibility: hidden;
-    height: 3rem;
-  }
-    .results__fig img,
-    .likes__fig img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all .3s;
-    }
-  .results__name,
-  .likes__name {
-    line-height: 100%;
-    font-size: 0.7rem;
-    color: #F59A83;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 1%;
-  }
-  .results__author,
-  .likes__author {
-    font-size: 0.5rem;
-    color: #968B87;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .likes__pages {
-    width: 100%;
-    margin-top: 3%;
-    padding: 0 3%;
-    display: flex;
-    justify-content: space-between;
-  }
+.results__link:link,
+.results__link:visited,
+.likes__link:link,
+.likes__link:visited {
+	display: flex;
+	align-items: center;
+	padding: 3%;
+	transition: all 0.3s;
+	border-right: 1px solid #fff;
+	text-decoration: none;
+}
+.results__link:hover,
+.likes__link:hover {
+	background-color: #f9f5f3;
+	transform: translateY(-2px);
+}
+.results__link--active,
+.likes__link--active {
+	background-color: #f9f5f3;
+}
+.results__fig,
+.likes__fig {
+	flex: 0 0 3rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 5%;
+	backface-visibility: hidden;
+	height: 3rem;
+}
+.results__fig img,
+.likes__fig img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+.results__name,
+.likes__name {
+	line-height: 100%;
+	font-size: 0.7rem;
+	color: #f59a83;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 1%;
+}
+.results__author,
+.likes__author {
+	font-size: 0.5rem;
+	color: #968b87;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.likes__pages {
+	width: 100%;
+	margin-top: 3%;
+	padding: 0 3%;
+	display: flex;
+	justify-content: space-between;
+}
 /******************************** 
 Конец стилей результатов поиска и списка лайков
 *********************************/
@@ -316,23 +327,26 @@ body {
     Начало стилей лоад спиннера
 *********************************/
 .loader {
-  margin: 5rem auto;
-  text-align: center;
+	margin: 5rem auto;
+	text-align: center;
 }
 
 .loader svg {
-  height: 5.5rem;
-  width: 5.5rem;
-  fill: #F59A83;
-  transform-origin: 44% 50%;
-  animation: rotate 1.5s infinite linear;
+	height: 5.5rem;
+	width: 5.5rem;
+	fill: #f59a83;
+	transform-origin: 44% 50%;
+	animation: rotate 1.5s infinite linear;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(360deg); } }
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 /******************************** 
     Конец стилей лоад спиннера
 *********************************/
@@ -341,149 +355,152 @@ body {
 Начало стилей выбранного рецепта
 *********************************/
 .recipe {
-  background-color: #F9F5F3;
-  grid-area: recipe;
+	background-color: #f9f5f3;
+	grid-area: recipe;
 }
-  .recipe__fig {
-    position: relative;
-    transform: scale(1.04) translateY(-1px);
-    transform-origin: top;
-  }
-  .recipe__img {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .recipe__title {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 20%) skewY(-6deg);
-    color: #fff;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    width: 70%;
-    line-height: 1.95;
-    text-align: center;
-  }
-    .recipe__title span {
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      padding: 1%;
-      background-image: linear-gradient(to right bottom, #FBDB89, #F48982); }
-  .recipe__details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5%;
-  }
-  .recipe__info {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-    .recipe__info:not(:last-child) {
-      margin-right: 3%;
-    }
-  .recipe__info-icon {
-    height: 1rem;
-    width: 1rem;
-    fill: #F59A83;
-    margin-right: 2px;
-  }
-  .recipe__info-data {
-    margin-right: 2%;
-    font-weight: 600;
-  }
-  .recipe__info-buttons {
-    display: flex;
-    margin-left: 2%;
-  }
-  .recipe__love {
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    margin-left: 5%;
-    transition: all .2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-    .recipe__love:hover {
-      transform: scale(1.07);
-    }
-    .recipe__love:focus {
-      outline: none;
-    }
-    .recipe__love svg {
-      height: 2rem;
-      width: 2rem;
-      fill: #fff;
-    }
+.recipe__fig {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	transform: scale(1.04) translateY(-1px);
+	transform-origin: top;
+}
+.recipe__img {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.recipe__title {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 20%) skewY(-6deg);
+	color: #fff;
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	width: 70%;
+	line-height: 1.95;
+	text-align: center;
+}
+.recipe__title span {
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	padding: 1%;
+	background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+}
+.recipe__details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5%;
+}
+.recipe__info {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+.recipe__info:not(:last-child) {
+	margin-right: 3%;
+}
+.recipe__info-icon {
+	height: 1rem;
+	width: 1rem;
+	fill: #f59a83;
+	margin-right: 2px;
+}
+.recipe__info-data {
+	margin-right: 2%;
+	font-weight: 600;
+}
+.recipe__info-buttons {
+	display: flex;
+	margin-left: 2%;
+}
+.recipe__love {
+	background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	margin-left: 5%;
+	transition: all 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.recipe__love:hover {
+	transform: scale(1.07);
+}
+.recipe__love:focus {
+	outline: none;
+}
+.recipe__love svg {
+	height: 2rem;
+	width: 2rem;
+	fill: #fff;
+}
 
-  .recipe__ingredients {
-    padding: 3%;
-    font-size: 1rem;
-    line-height: 1;
-    background-color: #F2EFEE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .recipe__ingredient-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 1rem;
-    list-style: none;
-    margin-bottom: 3%;
-  }
-  .recipe__item {
-    display: flex;
-  }
-  .recipe__icon {
-    height: 1rem; 
-    width: 1rem; 
-    fill: #F59A83; 
-    border: 1px solid #F59A83; 
-    border-radius: 50%; 
-    padding: 2px; 
-    margin-right: 1%; 
-    flex: 0 0 auto;
-  }
-  .recipe__count {
-    margin-right: 1%;
-  }
-  .heading-2 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #F59A83;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-    text-align: center;
-    transform: skewY(-3deg);
-  }
-  
-  .recipe__directions {
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .recipe__directions-text {
-    font-size: 0.7rem;
-    text-align: center;
-    margin-bottom: 2%;
-    color: #968B87;
-  }
-  .recipe__by {
-    font-weight: 700;
-  }
+.recipe__ingredients {
+	padding: 3%;
+	font-size: 1rem;
+	line-height: 1;
+	background-color: #f2efee;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recipe__ingredient-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+	grid-row-gap: 1rem;
+	list-style: none;
+	margin-bottom: 3%;
+}
+.recipe__item {
+	display: flex;
+}
+.recipe__icon {
+	height: 1rem;
+	width: 1rem;
+	fill: #f59a83;
+	border: 1px solid #f59a83;
+	border-radius: 50%;
+	padding: 2px;
+	margin-right: 1%;
+	flex: 0 0 auto;
+}
+.recipe__count {
+	margin-right: 1%;
+}
+.heading-2 {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #f59a83;
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	text-align: center;
+	transform: skewY(-3deg);
+}
+
+.recipe__directions {
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recipe__directions-text {
+	font-size: 0.7rem;
+	text-align: center;
+	margin-bottom: 2%;
+	color: #968b87;
+}
+.recipe__by {
+	font-weight: 700;
+}
 /******************************** 
   Конец стилей выбранного рецепта
 *********************************/
@@ -492,69 +509,76 @@ body {
   Начало стилей раздела покупок
 *********************************/
 .shopping {
-  grid-area: shopping;
-  padding: 3%;
-  display: flex;
-  flex-direction: column;
+	grid-area: shopping;
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
 }
-  .shopping__list {
-    list-style: none;
-    max-height: 100%;
-    overflow-y: scroll;
-  }
-  .shopping__item {
-    display: flex;
-    align-items: flex-start;
-    padding: 2%;
-    border-bottom: 1px solid #F2EFEE;
-    position: relative;
-  }
-  .shopping__count {
-    padding: 1%;
-    border: 1px solid #F2EFEE;
-    border-radius: 3px;
-    margin-right: 2%;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-  }
-    .shopping__count input {
-      color: inherit;
-      font-family: inherit;
-      font-size: 0.6rem;
-      text-align: center;
-      border: none;
-      width: 100%;
-      border-radius: 3px;
-    }
-      .shopping__count input:focus {
-        outline: none;
-        background-color: #F2EFEE;
-      }
-    .shopping__count p {
-      font-size: 0.6em;
-    }
-  .shopping__description {
-    flex: 1;
-    font-size: 0.8rem;
-    margin-top: 1%;
-    margin-right: 1%;
-  }
-  .shopping__delete {
-    margin-top: 2%;
-    position: absolute;
-    right: 0;
-    background-image: linear-gradient(to right, transparent 0%, #fff 40%, #fff 100%);
-    width: 3.5rem;
-    padding-left: 2rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s;
-  }
-  .shopping__item:hover .shopping__delete {
-    opacity: 1;
-    visibility: visible;
-  }
+.shopping__list {
+	list-style: none;
+	max-height: 100%;
+	overflow-y: scroll;
+}
+.shopping__item {
+	display: flex;
+	align-items: flex-start;
+	padding: 2%;
+	border-bottom: 1px solid #f2efee;
+	position: relative;
+}
+.shopping__count {
+	width: 100%;
+	max-width: 353px;
+	padding: 1%;
+	border: 1px solid #f2efee;
+	border-radius: 3px;
+	margin-right: 2%;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+.shopping__count input {
+	color: inherit;
+	font-family: inherit;
+	font-size: 0.6rem;
+	text-align: center;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+}
+.shopping__count input:focus {
+	outline: none;
+	background-color: #f2efee;
+}
+.shopping__count p {
+	font-size: 0.6em;
+}
+.shopping__description {
+	flex: 1;
+	font-size: 0.8rem;
+	margin-top: 1%;
+	margin-right: 1%;
+}
+.shopping__delete {
+	margin-top: 2%;
+	position: absolute;
+	right: 0;
+	background-image: linear-gradient(
+		to right,
+		transparent 0%,
+		#fff 40%,
+		#fff 100%
+	);
+	width: 3.5rem;
+	padding-left: 2rem;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.shopping__item:hover .shopping__delete {
+	opacity: 1;
+	visibility: visible;
+}
 /******************************** 
   Начало стилей раздела покупок
 *********************************/
@@ -563,52 +587,52 @@ body {
     Начало стилей копирайт
 *********************************/
 .copyright {
-  color: #968B87;
-  font-size: 0.5rem;
-  margin-top: auto;
+	color: #968b87;
+	font-size: 0.5rem;
+	margin-top: auto;
 }
 
 .link:link,
 .link:visited {
-  color: #968B87;
+	color: #968b87;
 }
 /******************************** 
     Конец стилей копирайт
 *********************************/
 
 @media (max-width: 850px) {
-  * {
-    font: 85%/1rem 'Nunito Sans', sans-serif;
-  }
+	* {
+		font: 85%/1rem 'Nunito Sans', sans-serif;
+	}
 }
-@media only screen and (orientation: portrait) and (max-width : 700px) {
-  * {
-    font-size: 0.6rem;
-  }
-  .search__field {
-    font-size: 0.5rem;
-  }
-  .results__name {
-    font-size: 0.6rem;
-    line-height: 1.2;
-  }
-  .results__author {
-    line-height: 1.4;
-  }
-  .btn span {
-    font-size: 0.5rem;
-  }
-  .recipe__details {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .recipe__title {
-    line-height: 1;
-    transform: translate(-50%, -10%) skewY(-6deg);
-  }
-  .results__fig,
-  .likes__fig {
-    flex: 0 0 2rem;
-    height: 2rem;
-  }
+@media only screen and (orientation: portrait) and (max-width: 700px) {
+	* {
+		font-size: 0.6rem;
+	}
+	.search__field {
+		font-size: 0.5rem;
+	}
+	.results__name {
+		font-size: 0.6rem;
+		line-height: 1.2;
+	}
+	.results__author {
+		line-height: 1.4;
+	}
+	.btn span {
+		font-size: 0.5rem;
+	}
+	.recipe__details {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.recipe__title {
+		line-height: 1;
+		transform: translate(-50%, -10%) skewY(-6deg);
+	}
+	.results__fig,
+	.likes__fig {
+		flex: 0 0 2rem;
+		height: 2rem;
+	}
 }
